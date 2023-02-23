@@ -36,12 +36,13 @@ module.exports = {
                 payload,
                 refreshSecret,
                 { expiresIn: "7d" },
-                (err, token) => {
+                async (err, token) => {
                     if (err) {
                         reject(err);
                     }
+                    const user = await User.findById(payload.id);
                     user.refreshToken = token;
-                    user.save();
+                    await user.save();
                     resolve(token);
                 }
             );
