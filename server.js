@@ -35,8 +35,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(expressCookieParser());
 
 // Routes
-app.use("/products", require("./api/products/route"));
-app.use("/products", require("./api/reviews/route"));
+app.use("/accommodations", require("./api/accommodations/route"));
+app.use("/user", require("./api/user/route"));
 
 // Error handler
 app.use(badRequestHandler);
