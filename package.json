@@ -1,0 +1,23 @@
+{
+    "name": "d10",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "keywords": [],
+    "author": "Astatine <contact@astatine.moe> (https://astatine.moe/)",
+    "license": "ISC",
+    "dependencies": {
+        "cookie-parser": "^1.4.6",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "express-list-routes": "^1.1.3",
+        "http-errors": "^2.0.0",
+        "jsonwebtoken": "^9.0.0",
+        "mongoose": "^6.10.0",
+        "morgan": "^1.10.0"
+    }
+}
